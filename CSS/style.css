@@ -70,3 +70,14 @@ form button:hover{
   background:#fff;
   color:#141a34;
 }
+
+.input-group span{
+  position:absolute;
+  bottom:17px;
+  right:16px;
+  font-size:14px;
+  color:red;
+}
+#submit-error{
+  color:red;
+}
