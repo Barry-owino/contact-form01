@@ -52,3 +52,32 @@ function validateEmail() {
   emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
   return true;
 }
+
+/*function validateMessage() {
+  const message = document.getElementById('contact-message').value;
+
+  if (message.length == 0){
+    messageError.innerHTML = 'Message is required';
+    return false;
+  }
+  if (message.length !== 30){
+    messageError.innerHTML = 'Message must be 30 characters long';
+    return false;
+  }
+  messageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+  return true;
+}*/
+
+function validateMessage() {
+  const message = document.getElementById('contact-message').value;
+  const required = 30;
+  const left = required - message.length;
+
+  if (left > 0){
+    messageError.innerHTML = left + 'more characters required';
+    return false;
+  }
+  messageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+  return true;
+}
+
