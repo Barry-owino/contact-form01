@@ -81,3 +81,7 @@ form button:hover{
 #submit-error{
   color:red;
 }
+
+.input-group i{
+  color:green;
+}
